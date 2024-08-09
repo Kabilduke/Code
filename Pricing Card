@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pricing-Card</title>
+</head>
+<Style>
+            *{
+                margin: 0px;
+                padding: 0px;
+                box-sizing:border-box ;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            Body{
+                width: 100%;
+                height: 100vh;
+            }
+            .container{
+                width:1100px ;
+                height: 100%;
+                margin: auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                color: white;
+            }
+            .container .card{
+                width: 300px;
+                height: auto;
+                padding: 10px 0px;
+                text-align: center;
+                background: linear-gradient(135deg, #ee20d6 0%, #0a2fb6 100% );
+                border-radius: 15px;
+                box-shadow: 2px 2px 15px black;
+                transition: 0.3s;
+            }
+            .container  .card:hover{
+                transform: scale(1.050);
+            }
+            .container  .card .card-title{
+                padding: 30px 20px;
+                border-bottom:2px solid gray ;
+            }
+            .container  .card-title h2{
+                font-size: 35px;
+                padding: 15px;
+                color: yellow;
+            }
+            .container .card-title p span{
+                font-size: 40px;
+                padding: 0.5px;
+            }
+            .container .card .card-content ul{
+                padding: 10px 30px;
+                padding-bottom: 20px;
+            }
+            .container .card .card-content ul li{
+                list-style: none;
+                padding: 10px 0px;
+            }
+            .container .card .card-content ul li i{
+                margin-right: 4px;
+            }
+            .container .card .card-content button{
+                width: 120px;
+                padding: 10px 20px;
+                background:white;
+                border-radius: 20px;
+               margin-bottom: 10px;
+               outline: none;
+               border: none;
+               cursor: pointer;
+               transition: 0.3s;
+            }
+            .container .card .card-content button:hover{
+                background: #17ead9;
+                letter-spacing: 1.2px;
+            }
+            .container .card .card-content button a{
+                text-decoration: none;
+                color: black;
+                font-size: 15px;
+            }
+        </Style>
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <div class="card-title">
+            <h2>Basic</h2>
+            <p><i class="fa fa-rupee"></i><Span>99</Span>/month</p>
+        </div>
+        <div class="card-content">
+            <ul>
+                <li><i class="fa fa-check-circle"></i>1 Website</li>
+                <li><i class="fa fa-check-circle"></i>5 Gb Storage</li>
+                <li><i class="fa fa-check-circle"></i>1 Database</li>
+                <li><i class="fa fa-times-circle"></i>Free Domain</li>
+                <li><i class="fa fa-times-circle"></i>Professional Email</li>
+                <li><i class="fa fa-times-circle"></i>24/7 Support</li>
+            </ul>
+            <button><a href="#">Buy Now</a></button>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-title">
+            <h2>Standard</h2>
+            <p><i class="fa fa-rupee"></i><Span>199</Span>/month</p>
+        </div>
+        <div class="card-content">
+            <ul>
+                <li><i class="fa fa-check-circle"></i>10 Website</li>
+                <li><i class="fa fa-check-circle"></i>25 Gb Storage</li>
+                <li><i class="fa fa-check-circle"></i>10 Database</li>
+                <li><i class="fa fa-times-circle"></i>Free Domain</li>
+                <li><i class="fa fa-check-circle"></i>Professional Email</li>
+                <li><i class="fa fa-check-circle"></i>24/7 Support</li>
+            </ul>
+            <button><a href="#">Buy Now</a></button>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-title">
+            <h2>Premium</h2>
+            <p><i class="fa fa-rupee"></i><Span>299</Span>/month</p>
+        </div>
+        <div class="card-content">
+            <ul>
+                <li><i class="fa fa-check-circle"></i>Unlimited Website</li>
+                <li><i class="fa fa-check-circle"></i>50Gb Storage</li>
+                <li><i class="fa fa-check-circle"></i>Unlimited Database</li>
+                <li><i class="fa fa-check-circle"></i>Free Domain</li>
+                <li><i class="fa fa-check-circle"></i>Professional Email</li>
+                <li><i class="fa fa-check-circle"></i>24/7 Support</li>
+            </ul>
+            <button><a href="#">Buy Now</a></button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
